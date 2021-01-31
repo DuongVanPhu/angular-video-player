@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "b7c2ad79-7b8b-45a4-9354-948bca9cdebe"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -48,7 +51,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -152,7 +154,7 @@
       "prefix": "jo",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/app-ui/tsconfig.lib.json",
             "project": "projects/app-ui/ng-package.json"
